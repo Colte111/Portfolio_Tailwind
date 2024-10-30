@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    body {
+        @apply bg-gradient-to-b from-blue-charcoal-900 to-blue-charcoal-950 w-full h-full 
+        bg-no-repeat bg-blue-charcoal-950 text-white;
+    }
+    /* ---------- NAV ---------- */
+    nav{
+        @apply pt-[10px] flex items-center justify-between
+    }
+
+    .nav-link{
+        @apply text-blue-charcoal-300 font-bold text-[20px] m-[10px]
+    }
+
+    .nav-link.active{
+        @apply text-blue-charcoal-100
+    }
+
+    .logo{
+        @apply text-white font-bold text-[45px]
+    }
+
+    /* styles.css */
+    .dropdown-menu {
+        @apply max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out; /* Para ocultar inicialmente */
+    }
+
+    .dropdown-menu.show {
+        @apply max-h-40; /* Ajusta según el contenido que tienes en el menú */
+    }
+
+}
+
+/* Estilo para nav en pantallas sm */
+@screen sm {
+    nav {
+        @apply mx-[50px]; /* Aplica un margen horizontal de 150px solo en pantallas sm */
+    }
+}
+
+/* Si necesitas estilos para otras pantallas, también puedes definirlos */
+@screen md {
+    nav {
+        @apply mx-[200px]; /* Diferente margen para pantallas md */
+    }
+}

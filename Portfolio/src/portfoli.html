@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteban - Jr Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="flex flex-col sm:flex-row justify-between items-center relative">
+        <div class="flex items-center w-full">
+            <!-- Contenedor para el logo -->
+            <div class="logo flex-grow text-center justify-center sm:text-left">
+                <h1>
+                    Est<span class="text-blue-charcoal-300">Sem</span>
+                </h1>
+            </div>
+            <div class="nav-close-icon sm:hidden flex justify-end mr-4" id="menuToggle">
+                <i class="fa-solid fa-bars text-white text-2xl"></i>
+            </div>
+        </div>
+        <div class="navLinks hidden sm:flex">
+            <a href="#AboutMe" class="nav-link">AboutMe</a>
+            <a href="#Skills" class="nav-link">Skills</a>
+            <a href="#Experience" class="nav-link">Experience</a>
+            <a href="#ContactoMe" class="nav-link">ContactMe</a>
+        </div>
+
+        <div class="dropdown-menu hidden sm:hidden transition-transform duration-300 ease-in-out" id="mobileMenu">
+            <a href="#AboutMe" class="block px-4 py-2">About me</a>
+            <a href="#Skills" class="block px-4 py-2">Skills</a>
+            <a href="#Experience" class="block px-4 py-2">Experience</a>
+            <a href="#ContactoMe" class="block px-4 py-2">Contact me</a>
+        </div>
+    </nav>
+    
+
+    <div id="AboutMe">
+        
+    </div>
+
+    <script src="./portfolio.js"></script>
+</body>
+</html>
