@@ -2,8 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Estilo para nav en pantallas sm */
+@screen sm {
+    nav {
+        @apply mx-[50px]; /* Aplica un margen horizontal de 150px solo en pantallas sm */
+    }
+
+    .container{
+        @apply mx-[50px]
+    }
+}
+
+/* Si necesitas estilos para otras pantallas, también puedes definirlos */
+@screen md {
+    nav {
+        @apply mx-[70px]; /* Diferente margen para pantallas md */
+    }
+    .container{
+        @apply mx-[70px]
+    }
+}
+
+@screen lg {
+    nav {
+        @apply mx-[200px]; /* Diferente margen para pantallas md */
+    }
+
+    .container{
+        @apply mx-[200px]
+    }
+}
 
 @layer components{
+    html{
+        font-family: Onest Variable, system-ui, sans-serif;
+    }
     body {
         @apply bg-gradient-to-b from-blue-charcoal-900 to-blue-charcoal-950 w-full h-full 
         bg-no-repeat bg-blue-charcoal-950 text-white;
@@ -11,6 +44,26 @@
     /* ---------- NAV ---------- */
     nav{
         @apply pt-[10px] flex items-center justify-between
+    }
+
+    h1{
+        @apply text-blue-charcoal-300 text-[48px] font-bold
+    }
+
+    h2{
+        @apply text-blue-charcoal-100 text-[36px] font-bold
+    }
+
+    .container {
+        @apply max-w-screen-xl mx-auto px-4 overflow-hidden;
+    }
+    
+    .am-titles{
+        @apply flex items-center justify-center
+    }
+
+    .am-button{
+        @apply 
     }
 
     .nav-link{
@@ -25,27 +78,23 @@
         @apply text-white font-bold text-[45px]
     }
 
-    /* styles.css */
     .dropdown-menu {
-        @apply max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out; /* Para ocultar inicialmente */
+        @apply max-h-0 overflow-hidden duration-300 ease-in-out; /* Para ocultar inicialmente */
     }
 
     .dropdown-menu.show {
         @apply max-h-40; /* Ajusta según el contenido que tienes en el menú */
     }
 
+    .am-titles{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    
+    }
+
 }
 
-/* Estilo para nav en pantallas sm */
-@screen sm {
-    nav {
-        @apply mx-[50px]; /* Aplica un margen horizontal de 150px solo en pantallas sm */
-    }
-}
-
-/* Si necesitas estilos para otras pantallas, también puedes definirlos */
-@screen md {
-    nav {
-        @apply mx-[200px]; /* Diferente margen para pantallas md */
-    }
-}

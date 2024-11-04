@@ -13,7 +13,7 @@
         <div class="flex items-center w-full">
             <!-- Contenedor para el logo -->
             <div class="logo flex-grow text-center justify-center sm:text-left">
-                <h1>
+                <h1 class="text-white">
                     Est<span class="text-blue-charcoal-300">Sem</span>
                 </h1>
             </div>
@@ -37,9 +37,37 @@
     </nav>
     
 
-    <div id="AboutMe">
-        
+    <div id="AboutMe" class="container">
+        <div class="grid md:grid-cols-2 my-[5%]">
+            <div class="am-titles">
+                <h1>
+                    I'm Esteban Sempere
+                </h1>
+                <h2>
+                    Junior Fullstack Developer
+                </h2>
+                <p class="text-[20px] my-7">
+                    I'm a Junior Fullstack Developer, with <span class="text-blue-charcoal-400">+1 year of experience</span> working with <span class="text-blue-charcoal-400">Angular and PL/SQL</span>.
+                    I also like to improve my skills using <span class="text-blue-charcoal-400">C#</span> and <span class="text-blue-charcoal-400">.NET Framework</span>. I always give my all to continue learning.
+                </p>
+                <div class="am-buttons">
+                    <button id="btnLinkedin">
+                        LinkedIn
+                    </button>
+                    <button id="btnGitHub">
+                        GitHub
+                    </button>
+                    <button id="btnContact">
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="am-img flex justify-center">
+                <img src="./fotos/fotoPer.png" class="w-[400px]"/>
+            </div>
+        </div>
     </div>
+    
 
     <script src="./portfolio.js"></script>
 </body>
