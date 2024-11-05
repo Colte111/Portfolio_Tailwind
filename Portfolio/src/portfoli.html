@@ -13,7 +13,7 @@
         <div class="flex items-center w-full">
             <!-- Contenedor para el logo -->
             <div class="logo flex-grow text-center justify-center sm:text-left">
-                <h1>
+                <h1 class="text-white text-[42px]">
                     Est<span class="text-blue-charcoal-300">Sem</span>
                 </h1>
             </div>
@@ -37,8 +37,139 @@
     </nav>
     
 
-    <div id="AboutMe">
-        
+    <div id="AboutMe" class="section">
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2 my-[5%]">
+            <div class="am-titles flex justify-center ">
+                <h1>
+                    I'm Esteban Sempere
+                </h1>
+                <h2>
+                    Junior Fullstack Developer
+                </h2>
+                <p class="text-[20px] my-7">
+                    I'm a Junior Fullstack Developer, with <span class="text-blue-charcoal-400">+1 year of experience</span> working with <span class="text-blue-charcoal-400">Angular and PL/SQL</span>.
+                    I also like to improve my skills using <span class="text-blue-charcoal-400">C#</span> and <span class="text-blue-charcoal-400">.NET Framework</span>. I always give my all to continue learning.
+                </p>
+                <div class="am-buttons">
+                    <button id="btnLinkedin" class="btn">
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </button>
+                    <button id="btnGitHub" class="btn">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </button>
+                    <button id="btnContact" class="btn">
+                        <i class="fa-solid fa-envelope"></i> Contact
+                    </button>
+                </div>
+            </div>
+            <div class="am-img flex justify-center lg:justify-start">
+                <img src="./fotos/fotoPer-conFondo.png" class="w-[400px]"/>
+            </div>
+        </div>
+    </div>
+   
+    <div id="Skills" class="section">
+        <h1 class="px-8 sm:px-0">
+            My Skills
+        </h1>
+        <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-white gap-4">
+            <div class="box-exp" id="angular">
+                <div class="exp-img">
+                    <img src="./fotos/angular.png">
+                </div>
+                <div class="exp-text">
+                    <p>Angular</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="csharp">
+                <div class="exp-img">
+                    <img src="./fotos/csharp.png" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>C#</p>  
+                </div>
+            </div>
+            <div class="box-exp" id=".NET">
+                <div class="exp-img">
+                    <img src="./fotos/dotnet.png" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>.NET Framework</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="typescript">
+                <div class="exp-img">
+                    <img src="./fotos/type.png" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>TypeScript</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="javascript">
+                <div class="exp-img">
+                    <img src="./fotos/js.webp" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>JavaScript</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="Tailwind">
+                <div class="exp-img">
+                    <img src="./fotos/tailwind.png" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>Tailwind</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="SQLServer">
+                <div class="exp-img">
+                    <img src="./fotos/sql.png" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>SQL Server</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="PL/SQL">
+                <div class="exp-img">
+                    <img src="" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>PL/SQL</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="html">
+                <div class="exp-img">
+                    <img src="" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>HTML</p>  
+                </div>
+            </div>
+            <div class="box-exp" is="css">
+                <div class="exp-img">
+                    <img src="" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>CSS</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="git">
+                <div class="exp-img">
+                    <img src="" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>Git</p>  
+                </div>
+            </div>
+            <div class="box-exp" id="docker">
+                <div class="exp-img">
+                    <img src="" alt="">
+                </div>
+                <div class="exp-text">
+                    <p>Docker</p>  
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./portfolio.js"></script>
