@@ -11,15 +11,15 @@
 <body>
     <nav class="flex flex-col sm:flex-row justify-center sticky top-0 items-center">
         <div class="navLinks flex">
-            <a href="#AboutMe" class="nav-link">AboutMe</a>
+            <a href="#AboutMe" class="nav-link">Home</a>
             <a href="#Skills" class="nav-link">Skills</a>
             <a href="#Experience" class="nav-link">Experience</a>
-            <a href="#ContactoMe" class="nav-link">ContactMe</a>
+            <a href="#ContactoMe" class="nav-link">AboutMe</a>
         </div>
     </nav>
     
 
-    <div id="AboutMe" class="section">
+    <div id="Home" class="section">
         <div class="grid sm:grid-cols-1 lg:grid-cols-2 my-[5%]">
             <div class="am-titles flex justify-center ">
                 <h1>
@@ -40,7 +40,7 @@
                         <i class="fa-brands fa-github"></i> GitHub
                     </button>
                     <button id="btnContact" class="btn">
-                        <i class="fa-solid fa-envelope"></i> Contact
+                        <i class="fa-solid fa-file"></i> Contact
                     </button>
                 </div>
             </div>
@@ -50,7 +50,7 @@
         </div>
     </div>
    
-    <div id="Skills" class="section">
+    <div id="Skills" class="section pt-11">
         <h1 class="px-8 sm:px-0 mb-6">
             <i class="fa-solid fa-laptop-code"></i> My Skills
         </h1>
@@ -156,7 +156,7 @@
 
     <div id="Experience" class="section pt-11">
         <h1 class="px-8 sm:px-0 mb-6">
-            <i class="fa-solid fa-business-time mr-2"></i> My Experience
+            <i class="fa-solid fa-business-time mr-2"></i>My Experience
         </h1>
         
         <ol class="relative mt-16"> 
@@ -165,7 +165,7 @@
                 before:border-blue-charcoal-200 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"> 
                     <div class="relative pb-12 md:col-span-2"> 
                         <div class="sticky top-0"> 
-                            <span class="text-blue-charcoal-300 -left-[42px] absolute rounded-full text-5xl">•</span> 
+                            <span class="text-blue-charcoal-500 -left-[42px] absolute rounded-full text-5xl">•</span> 
                             <h3 class="text-xl font-bold text-blue-charcoal-300">
                                 Junior Software Developer
                             </h3> 
@@ -187,7 +187,7 @@
                           before:border-blue-charcoal-200 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"> 
                     <div class="relative pb-12 md:col-span-2"> 
                         <div class="sticky top-0"> 
-                            <span class="text-blue-charcoal-300 -left-[42px] absolute rounded-full text-5xl">•</span> 
+                            <span class="text-blue-charcoal-500 -left-[42px] absolute rounded-full text-5xl">•</span> 
                             <h3 class="text-xl font-bold text-blue-charcoal-300">
                                 SPFx Trainee Developer
                             </h3> 
@@ -206,8 +206,37 @@
         </ol>
     </div>
     
-    <div id="ContactMe" class="section">
-
+    <div id="AboutMe" class="section pt-11">
+        <h1 class="px-8 sm:px-0 mb-6">
+            <i class="fa-regular fa-envelope"></i> ContactMe
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 px-12 gap-5">
+            <div>
+                <h3 class="text-xl font-bold text-blue-charcoal-300 pb-3">
+                    Any Question?
+                </h3>
+                <p class="text-[18px] text-blue-200 mb-4">
+                    If you have any doubt about my person, complete this form or contact me through these methods:
+                </p>
+                <p class="text-[18px] text-blue-100 mb-2">
+                    <i class="fa-solid fa-phone"></i> +34 644 77 32 85
+                </p>
+                <p class="text-[18px] text-blue-100 mb-2">
+                    <i class="fa-regular fa-envelope"></i> esteban11.daw@gmail.com
+                </p>
+            </div>
+            <div>
+                <form action="mailto:esteban11.daw@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" placeholder="Name" class="input-contact" required>
+                    <input type="email" placeholder="Email" class="input-contact" required>
+                    <textarea name="message" placeholder="Message" class="w-[300px] lg:w-[500px] h-[200px] border-2 border-blue-charcoal-300 bg-transparent outline-none rounded-[10px]">
+                    </textarea>
+                    <button class="bg-blue-charcoal-400 p-2 rounded-md ml-auto">
+                        Send Mail
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="./portfolio.js"></script>

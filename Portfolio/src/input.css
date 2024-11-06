@@ -59,7 +59,10 @@
         @apply text-blue-charcoal-100 text-[26px] sm:text-[36px] font-bold
     }
 
-    
+    .input-contact {
+        @apply w-[300px] lg:w-[500px] h-[50px] bg-transparent text-base text-blue-charcoal-50 mb-2.5 px-2.5 py-0 
+        rounded-[10px] border-2 border-blue-charcoal-300 outline-none;
+    }
     
     .am-titles{
         @apply flex items-center justify-center sm:max-w-[600px] px-8 sm:px-0
