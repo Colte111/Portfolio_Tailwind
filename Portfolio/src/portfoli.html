@@ -9,30 +9,12 @@
     <link href="./input.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="flex flex-col sm:flex-row justify-between items-center relative">
-        <div class="flex items-center w-full">
-            <!-- Contenedor para el logo -->
-            <div class="logo flex-grow text-center justify-center sm:text-left">
-                <h1 class="text-white text-[42px]">
-                    Est<span class="text-blue-charcoal-300">Sem</span>
-                </h1>
-            </div>
-            <div class="nav-close-icon sm:hidden flex justify-end mr-4" id="menuToggle">
-                <i class="fa-solid fa-bars text-white text-2xl"></i>
-            </div>
-        </div>
-        <div class="navLinks hidden sm:flex">
+    <nav class="flex flex-col sm:flex-row justify-center sticky top-0 items-center">
+        <div class="navLinks flex">
             <a href="#AboutMe" class="nav-link">AboutMe</a>
             <a href="#Skills" class="nav-link">Skills</a>
             <a href="#Experience" class="nav-link">Experience</a>
             <a href="#ContactoMe" class="nav-link">ContactMe</a>
-        </div>
-
-        <div class="dropdown-menu hidden sm:hidden transition-transform duration-300 ease-in-out" id="mobileMenu">
-            <a href="#AboutMe" class="block px-4 py-2">About me</a>
-            <a href="#Skills" class="block px-4 py-2">Skills</a>
-            <a href="#Experience" class="block px-4 py-2">Experience</a>
-            <a href="#ContactoMe" class="block px-4 py-2">Contact me</a>
         </div>
     </nav>
     
@@ -41,14 +23,14 @@
         <div class="grid sm:grid-cols-1 lg:grid-cols-2 my-[5%]">
             <div class="am-titles flex justify-center ">
                 <h1>
-                    I'm Esteban Sempere
+                    <i class="fa-regular fa-user"></i> I'm Esteban Sempere
                 </h1>
                 <h2>
-                    Junior Fullstack Developer
+                    <i class="fa-solid fa-code"></i> Junior Fullstack Developer
                 </h2>
                 <p class="text-[20px] my-7">
-                    I'm a Junior Fullstack Developer, with <span class="text-blue-charcoal-400">+1 year of experience</span> working with <span class="text-blue-charcoal-400">Angular and PL/SQL</span>.
-                    I also like to improve my skills using <span class="text-blue-charcoal-400">C#</span> and <span class="text-blue-charcoal-400">.NET Framework</span>. I always give my all to continue learning.
+                    I'm a Junior Fullstack Developer, with <span class="text-blue-charcoal-400 font-bold">+1 year of experience</span> working with <span class="text-blue-charcoal-400 font-bold">Angular and PL/SQL</span>.
+                    I also like to improve my skills using <span class="text-blue-charcoal-400 font-bold">C#</span> and <span class="text-blue-charcoal-400 font-bold">.NET Framework</span>. I always give my all to continue learning.
                 </p>
                 <div class="am-buttons">
                     <button id="btnLinkedin" class="btn">
@@ -69,10 +51,10 @@
     </div>
    
     <div id="Skills" class="section">
-        <h1 class="px-8 sm:px-0">
-            My Skills
+        <h1 class="px-8 sm:px-0 mb-6">
+            <i class="fa-solid fa-laptop-code"></i> My Skills
         </h1>
-        <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-white gap-4">
+        <div class="skills-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-white gap-4 p-5 bg-blue-900 rounded-xl">
             <div class="box-exp" id="angular">
                 <div class="exp-img">
                     <img src="./fotos/angular.png">
@@ -94,7 +76,7 @@
                     <img src="./fotos/dotnet.png" alt="">
                 </div>
                 <div class="exp-text">
-                    <p>.NET Framework</p>  
+                    <p>.NET</p>  
                 </div>
             </div>
             <div class="box-exp" id="typescript">
@@ -131,7 +113,7 @@
             </div>
             <div class="box-exp" id="PL/SQL">
                 <div class="exp-img">
-                    <img src="" alt="">
+                    <img src="./fotos/oracle.png" alt="">
                 </div>
                 <div class="exp-text">
                     <p>PL/SQL</p>  
@@ -139,7 +121,7 @@
             </div>
             <div class="box-exp" id="html">
                 <div class="exp-img">
-                    <img src="" alt="">
+                    <img src="./fotos/html5.png" alt="">
                 </div>
                 <div class="exp-text">
                     <p>HTML</p>  
@@ -147,7 +129,7 @@
             </div>
             <div class="box-exp" is="css">
                 <div class="exp-img">
-                    <img src="" alt="">
+                    <img src="./fotos/css.png" alt="">
                 </div>
                 <div class="exp-text">
                     <p>CSS</p>  
@@ -155,7 +137,7 @@
             </div>
             <div class="box-exp" id="git">
                 <div class="exp-img">
-                    <img src="" alt="">
+                    <img src="./fotos/git2.png" alt="">
                 </div>
                 <div class="exp-text">
                     <p>Git</p>  
@@ -163,13 +145,69 @@
             </div>
             <div class="box-exp" id="docker">
                 <div class="exp-img">
-                    <img src="" alt="">
+                    <img src="./fotos/docker.webp" alt="">
                 </div>
                 <div class="exp-text">
                     <p>Docker</p>  
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="Experience" class="section pt-11">
+        <h1 class="px-8 sm:px-0 mb-6">
+            <i class="fa-solid fa-business-time mr-2"></i> My Experience
+        </h1>
+        
+        <ol class="relative mt-16"> 
+            <li class=""> 
+                <div class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 
+                before:border-blue-charcoal-200 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"> 
+                    <div class="relative pb-12 md:col-span-2"> 
+                        <div class="sticky top-0"> 
+                            <span class="text-blue-charcoal-300 -left-[42px] absolute rounded-full text-5xl">•</span> 
+                            <h3 class="text-xl font-bold text-blue-charcoal-300">
+                                Junior Software Developer
+                            </h3> 
+                            <h4 class="font-semibold text-xl text-blue-charcoal-200">
+                                Geonet Territorial
+                            </h4> 
+                            <time class="p-0 m-0 text-sm text-blue-charcoal-50"> August 2023 - Actually</time> 
+                        </div> 
+                    </div> 
+                    <div class="relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3"> 
+                        My main task is to develop new web components with Angular, prioritizing their optimization, 
+                        layout and design. I am also in charge of database management, creating new pl/sql blocks, 
+                        optimizing queries with large volumes of data. All this following good coding practices.
+                    </div> 
+                </div> 
+            </li>
+            <li class=""> 
+                <div class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 
+                          before:border-blue-charcoal-200 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"> 
+                    <div class="relative pb-12 md:col-span-2"> 
+                        <div class="sticky top-0"> 
+                            <span class="text-blue-charcoal-300 -left-[42px] absolute rounded-full text-5xl">•</span> 
+                            <h3 class="text-xl font-bold text-blue-charcoal-300">
+                                SPFx Trainee Developer
+                            </h3> 
+                            <h4 class="font-semibold text-xl text-blue-charcoal-200">
+                                NTT Data
+                            </h4> 
+                            <time class="p-0 m-0 text-sm text-blue-charcoal-50">February 2023 - June 2023</time> 
+                        </div> 
+                    </div> 
+                    <div class="relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3"> 
+                        During the internship period, I worked with Sharepoint Framework (SPFx), developing new webpacks and webcomponents with React. 
+                        I was also in charge of creating new processes with Power Automate, implementing them in the Sharepoint pages. 
+                    </div> 
+                </div> 
+            </li> 
+        </ol>
+    </div>
+    
+    <div id="ContactMe" class="section">
+
     </div>
 
     <script src="./portfolio.js"></script>
