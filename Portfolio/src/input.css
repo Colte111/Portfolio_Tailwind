@@ -48,11 +48,11 @@
     }
     /* ---------- NAV ---------- */
     nav{
-        @apply pt-[10px] flex items-center justify-between
+        @apply pt-[10px] flex items-center
     }
 
     h1{
-        @apply text-blue-charcoal-300 text-[36px] sm:text-[48px] font-bold
+        @apply text-blue-charcoal-400 text-[36px] sm:text-[36px] font-bold
     }
 
     h2{
@@ -70,14 +70,14 @@
     }
 
     .btn:hover{
-        @apply bg-blue-charcoal-50 text-blue-600 transition duration-500 ease-in
+        @apply bg-blue-charcoal-50 text-blue-600 transition duration-300 ease-in
     }
     .navLinks{
-        @apply border-[2px] rounded-full border-blue-charcoal-200 bg-blue-charcoal-700
+        @apply rounded-full border-blue-charcoal-200 bg-[rgba(0,30,79,0.86)] backdrop-blur-lg
     }
 
     .nav-link{
-        @apply text-blue-charcoal-200 font-bold text-[20px] m-[10px]
+        @apply text-blue-charcoal-200 font-bold text-[15px] m-[10px]
     }
 
     .nav-link.active{
@@ -89,7 +89,7 @@
     }
 
     .dropdown-menu {
-        @apply max-h-0 overflow-hidden duration-300 ease-in-out; /* Para ocultar inicialmente */
+        @apply max-h-0 overflow-hidden transition duration-300 ease-in-out; /* Para ocultar inicialmente */
     }
 
     .dropdown-menu.show {
@@ -97,7 +97,7 @@
     }
 
     .box-exp{
-        @apply border-2 border-blue-charcoal-500 grid grid-cols-2 rounded-3xl
+        @apply border-2 border-blue-charcoal-500 grid grid-cols-2 rounded-3xl text-blue-charcoal-500 bg-blue-200 bg-opacity-90
     }
 
     .exp-text{
